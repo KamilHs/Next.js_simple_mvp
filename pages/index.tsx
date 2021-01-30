@@ -50,6 +50,7 @@ export async function getStaticProps(): Promise<GetStaticPropsResult<IProp>> {
         props: {
             posts: orderBy('date', 'desc', filteredPosts)
         },
+        revalidate:1
     };
 }
 
